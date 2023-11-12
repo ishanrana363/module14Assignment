@@ -1,6 +1,10 @@
-
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
 import "./footer.css"
-const FooterCom = () => {
+import {BrowserRouter, Routes, Route, NavLink} from "react-router-dom";
+const Subcribe = () => {
     return (
         <div>
             <div className= "container" >
@@ -20,15 +24,13 @@ const FooterCom = () => {
                         <button className= "span" >Subscribe</button>
                     </div>
                 </div>
-                <footer>
 
-                </footer>
             </div>
         </div>
     );
 };
 
-export default FooterCom;
+export default Subcribe;
 
 
 
