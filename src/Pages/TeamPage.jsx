@@ -1,9 +1,14 @@
+import TeamMember from "../Component/TeamComponent/TeamMember.jsx";
+import Subcribe from "../Component/FooterComponent/Subcribe.jsx";
+import Footer from "../Component/FooterComponent/Footer.jsx";
 
 
 const TeamPage = () => {
     return (
         <div>
-            <h1>TeamPage</h1>
+            <TeamMember/>
+            <Subcribe/>
+            <Footer/>
         </div>
     );
 };

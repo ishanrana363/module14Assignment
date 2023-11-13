@@ -127,8 +127,14 @@ footer{
     font-size: 20px;
     color: white;
 }
+.Copyright p{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
 
-
+/*footer design end*/
 
 
 

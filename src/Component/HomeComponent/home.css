@@ -161,3 +161,83 @@ section{
 /* FeatureProduct design end */
 
 
+
+/* Counter design start */
+
+
+.CounterData{
+    background: linear-gradient(180deg, #D7F5DC 0%, #D7F5DC 100%);
+
+}
+.counter{
+    padding-top:150px ;
+    display: grid;
+    grid-template-columns: auto auto;
+    /*gap: 10rem;*/
+}
+.leftCounter{
+    width: 100%;
+}
+.Increase{
+    font-weight: 700;
+    font-size: 20px;
+}
+.help{
+    /*font-size: 20px;*/
+    /*font-weight: 500;*/
+    color: black;
+}
+.getStart{
+    width: 130px;
+    background: #20B15A;
+    height: 50px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 16px;
+    color: white;
+}
+
+
+/*.imgData{*/
+/*    margin-left: 30px;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+/* Counter design end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
