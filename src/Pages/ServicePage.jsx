@@ -1,9 +1,14 @@
+import OurAllService from "../Component/ServiceComponent/OurAllService.jsx";
+import Subcribe from "../Component/FooterComponent/Subcribe.jsx";
+import Footer from "../Component/FooterComponent/Footer.jsx";
 
 
 const ServicePage = () => {
     return (
         <div>
-            <h1>ServicePage</h1>
+            <OurAllService/>
+            <Subcribe/>
+            <Footer/>
         </div>
     );
 };
