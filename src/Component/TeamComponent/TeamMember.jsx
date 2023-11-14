@@ -17,12 +17,11 @@ const TeamMember = () => {
                         <h1 className= "teamCheck" >Check our awesome team <br/> members</h1>
                     </div>
                     <div className= "teamImg" >
-                        <section>
                             {
                                 data.map((item,i)=>{
                                     const {image1,img2,img3,img4,name} = item
                                     return(
-                                        <div key={i} className= "card" >
+                                        <div key={i} className= "card teamdata " >
                                             <img className= "team1Img" src={image1} />
                                             <div className= "teamImg3" >
                                                 <img src={img2} />
@@ -36,7 +35,6 @@ const TeamMember = () => {
                                     )
                                 })
                             }
-                        </section>
                     </div>
                 </div>
             </div>

@@ -32,8 +32,16 @@ section{
     grid-template-columns: auto auto auto;
     margin-top: 20px;
 }
+.teamImg{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.teamdata{
+    width: 95%;
+}
+
 .team1Img{
-    width: 100%;
+
 }
 .teamImg3{
     position: absolute;
