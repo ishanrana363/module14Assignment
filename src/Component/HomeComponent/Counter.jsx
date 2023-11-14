@@ -1,42 +1,45 @@
-import React, {useState} from 'react';
-import counterData from "./counterData.json"
+import counterJsonData from "./counterData.json"
 import "./home.css"
+import {useState} from "react";
 const Counter = () => {
-    const [data, setData] = useState(counterData);
+    const [data, setData] = useState(counterJsonData)
     return (
-        <div className= "CounterData" >
-                <div className= "container" >
-                    <div className= "counter" >
-                        <div className= "leftCounter" >
-                            <p className= "Increase" >
-                                Increase Your <br/>  Customers Loyalty <br/> and Satisfaction.
-                            </p>
-                            <p className= "help" >
-                                We help businesses like yours earn more customers,
-                                standout from competitors,  make more money
-                            </p>
-                            <button className= "getStart" >
-                                Get Started
-                            </button>
+        <div id= "counterPage" >
+            <div className= "container" >
+                <div className= "counterData" >
+                    <div className= "counterDataList" >
+                        <div className= "leftCounterData" >
+                            <div className= "leftCounterText  " >
+                                <h3>
+                                    Increase Your <br/>  Customers Loyalty <br/> and Satisfaction
+                                </h3>
+                                <p>We help businesses like yours <br/> earn more customers<br/>
+                                    standout  from competitors, <br/>  make more  money
+                                </p>
+                                <button>Get Started</button>
+                            </div>
                         </div>
-                        <div className= "rightCounter" >
-                            <section>
-                                <div className= "imgData" >
-                                    {
-                                        data.map((item,i)=>{
-                                            const {image} = item;
-                                            return(
-                                                <div key={i} >
-                                                    <img src={image} />
+                        <div className= "rightCounterData" >
+                            <div className= "rightCounterImg" >
+                                {
+                                    data.map((item,i)=>{
+                                        const {image} = item
+                                        return(
+                                            <section key={i} >
+                                                <div>
+                                                    <div>
+                                                        <img className= "counterImg" src={image} />
+                                                    </div>
                                                 </div>
-                                            )
-                                        })
-                                    }
-                                </div>
-                            </section>
+                                            </section>
+                                        )
+                                    })
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     );
 };

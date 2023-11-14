@@ -1,8 +1,13 @@
+import TestimonialList from "../Component/TestimonialComponent/TestimonialList.jsx";
+import Subcribe from "../Component/FooterComponent/Subcribe.jsx";
+import Footer from "../Component/FooterComponent/Footer.jsx";
 
 const TestimonialPage = () => {
     return (
         <div>
-            <h1>TestimonialPage</h1>
+            <TestimonialList/>
+            <Subcribe/>
+            <Footer/>
         </div>
     );
 };
